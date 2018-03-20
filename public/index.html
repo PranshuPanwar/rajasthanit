@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>polling live</title>
+
+</head>
+<body>
+<div class="container">
+<h1>Live polling tourism</h1>
+    <p>vote for your most favourite place</p>
+    <form id ='vote-form'>
+        <p>
+            <input type="radio" name="os" id="place1" value="place1">
+            <label for="place1">place 1</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="place2" value="place2">
+            <label for="place2">place 2</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="place3" value="place3">
+            <label for="place3">place 3</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="place4" value="place4">
+            <label for="place4">place 4</label>
+        </p>
+        <p>
+            <input type="radio" name="os" id="others" value="others">
+            <label for="others">something else</label>
+        </p>
+        <input type="submit" value="vote" class="btn">
+    </form>
+    <br><br>
+    <div id="chartContainer" style="height: 300px;width: 100%"></div>
+</div>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
