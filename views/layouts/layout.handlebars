@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>loginapp</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/new.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Dashboard <span class="sr-only">(current)</span></a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/users/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/users/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/users/login">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Login app</h3>
+    </header>
+
+    <main role="main">
+
+        <div class="row marketing">
+            <div class="col-lg-12">
+                {{#if success_msg}}
+                    <div class="alert alert-success">{{success_msg}}</div>
+                {{/if}}
+                {{#if error_msg}}
+                    <div class="alert alert-danger">{{error_msg}}</div>
+                {{/if}}
+                {{#if error}}
+                    <div class="alert alert-danger">{{error}}</div>
+                {{/if}}
+  {{{body}}}
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; login app 2017 .Inc</p>
+    </footer>
+
+</div> <!-- /container -->
+</body>
+</html>
